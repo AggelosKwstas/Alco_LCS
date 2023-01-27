@@ -9,7 +9,9 @@ if __name__ == "__main__":
 
     # How to run: Run py main.py X Y where X is the number of sequences and Y is the length of each sequence to be generated.
 
+    # X
     NumberOfSequences = int(sys.argv[1])
+    # Y
     LengthOfSequences = int(sys.argv[2])
 
     pool = ["A", "C", "G", "T"]  # pool of letters

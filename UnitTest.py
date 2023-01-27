@@ -5,9 +5,13 @@ from Brute_Force import Brute_Force
 
 class MyTestCase(unittest.TestCase):
 
+
+    # test brute_force
     def test_Brute_Force(self):
         self.assertEqual(Brute_Force("AATCGAG", "CCATCGG")[::-1], "ATCGG")
         self.assertEqual(Brute_Force("AAGCGTTCC", "ACGTGCGTC")[::-1], "AGCGTC")
+
+    # test lcs
 
     def test_LCS(self):
         self.assertEqual(LCS_sub_sequence("AATCGAG", "CCATCGG"), (5, "ATCGG"))
