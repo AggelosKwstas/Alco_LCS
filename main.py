@@ -24,7 +24,9 @@ if __name__ == "__main__":
             sequence = "".join([sequence, pool[random_index]])
         dna.append(sequence)
 
-    print("\nDNA Sequences are : ", *dna, sep='\n')  # final random sequences
+    print("\nDNA Sequences are : ")  # final random sequences
+    print("-------------------")
+    print(*dna, sep='\n')
 
     start1 = time.time()
     comb = combinations(dna, 2)  # get all possible combinations between sequences
@@ -51,7 +53,9 @@ if __name__ == "__main__":
 
     print('\n')
 
-    print("Brute Force : ", *final_sequence_brute, sep='\n')
+    print("Brute Force : ")
+    print("-------------")
+    print(*final_sequence_brute, sep='\n')
     end1 = time.time()
 
     start = time.time()
@@ -76,7 +80,9 @@ if __name__ == "__main__":
 
     print('\n')
 
-    print("LCS : ", *final_sequence_lcs, sep='\n')
+    print("LCS : ")
+    print("-----")
+    print(*final_sequence_lcs, sep='\n')
 
     end = time.time()
 
@@ -84,6 +90,8 @@ if __name__ == "__main__":
 
     print("Time spent for Brute Force method : ", end="")
     print(round(end1 - start1, 2))
+    print("---------------------------------------")
     print('\n')
     print("Time spent for LCS method : ", end="")
     print(round(end - start, 2))
+    print("-------------------------------")
