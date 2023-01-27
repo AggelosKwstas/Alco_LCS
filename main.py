@@ -1,5 +1,5 @@
 from Brute_Force import Brute_Force
-from LCS import LCS_sub_sequence
+from LCS import Compute_LCS
 from itertools import combinations
 import random
 import time
@@ -60,7 +60,7 @@ if __name__ == "__main__":
     comb = combinations(dna, 2)
 
     for a, b in comb:
-        sequence_length_lcs, sequence_found_lcs = LCS_sub_sequence(a, b)
+        sequence_length_lcs, sequence_found_lcs = Compute_LCS(a, b)
 
         if sequence_length_lcs > final_length_lcs:
             final_sequence_lcs = list()

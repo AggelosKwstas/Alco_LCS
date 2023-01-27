@@ -28,7 +28,7 @@ def LCS(a, b):
     return c  # compute each sub-problem's results memorization table
 
 
-def LCS_sub_sequence(a, b):
+def Compute_LCS(a, b):
     m = len(a)
     n = len(b)
     L = LCS(a, b)  # get array using LCS method
