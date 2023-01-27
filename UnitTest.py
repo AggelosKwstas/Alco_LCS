@@ -15,7 +15,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_LCS(self):
         self.assertEqual(Compute_LCS("AATCGAG", "CCATCGG"), (5, "ATCGG"))
-        self.assertEqual(Brute_Force("AAGCGTTCC", "ACGTGCGTC"), (6, "CTGCGA"))
+        self.assertEqual(Compute_LCS("AAGCGTTCC", "ACGTGCGTC"), (6, "ACGTCC"))
 
 
 if __name__ == "__main__":
