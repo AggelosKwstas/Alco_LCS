@@ -24,7 +24,7 @@ if __name__ == "__main__":
             sequence = "".join([sequence, pool[random_index]])
         dna.append(sequence)
 
-    print("\nDNA Sequences are: ", *dna, sep='\n')  # final random sequences
+    print("\nDNA Sequences are : ", *dna, sep='\n')  # final random sequences
 
     start1 = time.time()
     comb = combinations(dna, 2)  # get all possible combinations between sequences
@@ -51,7 +51,7 @@ if __name__ == "__main__":
 
     print('\n')
 
-    print("Brute Force: ", *final_sequence_brute, sep='\n')
+    print("Brute Force : ", *final_sequence_brute, sep='\n')
     end1 = time.time()
 
     start = time.time()
