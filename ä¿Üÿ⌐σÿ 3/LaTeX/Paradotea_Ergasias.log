@@ -778,10 +778,10 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 LaTeX Warning: Command \textellipsis invalid in math mode on input line 81.
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
-                   \relax 
+                   \relax
 l.82 	
        [1]
 <Εικόνα_1.png, id=41, 673.76718pt x 162.6075pt>

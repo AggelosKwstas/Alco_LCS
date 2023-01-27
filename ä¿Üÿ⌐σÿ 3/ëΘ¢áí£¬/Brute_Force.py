@@ -1,8 +1,8 @@
-def Brute_Force(xstr, ystr):
-    if not xstr or not ystr:
+def Brute_Force(a, b):
+    if not a or not b:
         return ""
-    x, xs, y, ys = xstr[0], xstr[1:], ystr[0], ystr[1:]
-    if x == y:
-        return str(Brute_Force(xs, ys)) + x
+    a_x, a_xs, b_y, b_ys = a[0], a[1:], b[0], b[1:]
+    if a_x == b_y:
+        return str(Brute_Force(a_xs, b_ys)) + a_x
     else:
-        return max(Brute_Force(xstr, ys), Brute_Force(xs, ystr), key=len)
+        return max(Brute_Force(a, b_ys), Brute_Force(a_xs, b), key=len)

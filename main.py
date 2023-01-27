@@ -3,11 +3,15 @@ from LCS import LCS_sub_sequence
 from itertools import combinations
 import random
 import time
+import sys
 
 if __name__ == "__main__":
 
-    NumberOfSequences = 5  # number of sequences
-    LengthOfSequences = 20  # length of a sequence
+    # How to run: Run py main.py X Y where X is the number of sequences and Y is the length of each sequence to be generated.
+
+    NumberOfSequences = int(sys.argv[1])
+    LengthOfSequences = int(sys.argv[2])
+
     pool = ["A", "C", "G", "T"]  # pool of letters
 
     dna = list()  # generate random sequences
@@ -18,7 +22,7 @@ if __name__ == "__main__":
             sequence = "".join([sequence, pool[random_index]])
         dna.append(sequence)
 
-    print("\nDNA Sequences are:", *dna, sep='\n')  # final random sequences
+    print("\nDNA Sequences are: ", *dna, sep='\n')  # final random sequences
 
     start1 = time.time()
     comb = combinations(dna, 2)  # get all possible combinations between sequences
